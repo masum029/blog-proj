@@ -1,7 +1,7 @@
 import React from 'react'
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Navbar from '../components/Navbar';
 import styles from '../page.module.css'
+
+import getAllPosts from '../lib/getAllPosts';
 
 export default async function page() {
 
@@ -11,11 +11,19 @@ export default async function page() {
   
   return (
     <main className={styles.main}>
-    
-
-
-    <div>This is blog page.</div>
   
+  <div> About page</div>
+        <div>
+          {posts.map((post)=>{
+            return(
+              <p key={post.id}>
+              {post.id} - {post.title}
+           </p>
+            )
+           
+          })}
+        </div>
+
   </main>
   )
 }
