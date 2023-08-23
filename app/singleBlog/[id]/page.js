@@ -17,12 +17,6 @@ const id=params.id;
         <h1 className="font-bold text-lg">{post.title}</h1>
 
         <div className="mt-5">{post.body}</div>
-
-        {/* <div className="mt-6">
-            <Suspense fallback={<h3>Loading comments...</h3>}>
-                <Comments commentsPromise={commentsPromise} />
-            </Suspense>
-        </div> */}
     </section>
 </div>
   )

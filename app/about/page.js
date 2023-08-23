@@ -11,7 +11,7 @@ export default async function page() {
   console.log(posts);
   return (
     <main className={styles.main}>   
-        <div> About page</div>
+        <div> Blog List with Head</div>
         <div>
           {posts.map((post)=>{
             return(
@@ -24,13 +24,13 @@ export default async function page() {
         </div>
         
         <section>
-                <h1 className="font-bold text-lg">Blog Posts</h1>
+                <h1 className="font-bold text-lg">Blog Posts with route</h1>
 
                 <div className="mt-5">
                     {posts.map((post) => {
                         return (
                             <p className="pb-5" key={post.id}>
-                                <Link href={`/about/${post.id}`}>
+                                <Link href={`/singleBlog/${post.id}`}>
                                     {post.id} - {post.title}
                                 </Link>
                             </p>

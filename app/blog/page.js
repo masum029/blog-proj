@@ -13,17 +13,7 @@ export default async function page() {
     <main className={styles.main}>
   
   <div> About page</div>
-        <div>
-          {posts.map((post)=>{
-            return(
-              <p key={post.id}>
-              {post.id} - {post.title}
-           </p>
-            )
-           
-          })}
-        </div>
-
+        
   </main>
   )
 }

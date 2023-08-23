@@ -19,7 +19,7 @@ export default async function Home() {
                                     {post.id} - {post.title}
                                 </Link> */}
 
-                                <Link href={`/single-blog/${post.id}`}>
+                                <Link href={`/singleBlog/${post.id}`}>
                                 {post.id} - {post.title}
                                 </Link>
                             </p>
