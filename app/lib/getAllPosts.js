@@ -1,4 +1,3 @@
-import error from "../blog/error";
 
 export default async function getAllPosts(){
 
