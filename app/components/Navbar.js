@@ -17,6 +17,28 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="nav-item">
+              <Link href="/setCookies">
+                SET Cookies
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link href="/readCookies">
+                Read Cookies
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link href="/Redirect">
+              Redirect TO Read Cookies
+              </Link>
+            </li>
+
+            <li className="nav-item">
+              <Link href="/headmodify">
+              Head Modify
+              </Link>
+            </li>
+
+            <li className="nav-item">
               <Link href="/AbtPage">
                 About
               </Link>
